@@ -1,0 +1,226 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f1f4f8;
+    color: #26364a;
+}
+
+/* Шапка сайта */
+
+.site-header {
+    min-height: 100px;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #142b4a;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.logo-mark {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e5a52e;
+    border-radius: 10px;
+    color: #e5a52e;
+    font-size: 18px;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.header-title strong {
+    font-size: 20px;
+}
+
+/* Основная часть */
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 50px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.form-card {
+    padding: 40px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+h1 {
+    margin-bottom: 12px;
+    color: #142b4a;
+    font-size: 30px;
+}
+
+.intro {
+    margin-bottom: 25px;
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Поля формы */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label,
+.form-card > label {
+    margin: 17px 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce4ed;
+    border-radius: 9px;
+    background: #fafbfd;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #b5cde5;
+    border-color: #245b91;
+}
+
+fieldset {
+    display: flex;
+    gap: 25px;
+    margin: 25px 0;
+    padding: 15px;
+    border: 1px solid #dce4ed;
+    border-radius: 9px;
+}
+
+legend {
+    padding: 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    accent-color: #245b91;
+}
+
+/* Кнопки и ссылки */
+
+.button {
+    display: inline-block;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 9px;
+    background: #245b91;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #142b4a;
+}
+
+.second-link {
+    display: block;
+    margin-top: 25px;
+    color: #245b91;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.second-link:hover {
+    text-decoration: underline;
+}
+
+.second-button {
+    margin-top: 20px;
+}
+
+/* Подвал */
+
+.site-footer {
+    padding: 22px;
+    background: #142b4a;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Адаптация для телефона */
+
+@media (max-width: 600px) {
+    .site-header {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .header-title {
+        font-size: 11px;
+    }
+
+    .header-title strong {
+        font-size: 16px;
+    }
+
+    .form-card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
